@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>CSS编码规范 | Code Time cn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="CSS" />
+    
+    <meta name="description" content="CSS
+		
+
+		
+			
+				语法
+				
+					用4个空格来代替制表符（tab） -- 这是唯一能保证在所有环境下获得一致展现的方法。
+					为选择器分组时，将单独的选择器单独放在一行。
+					为了代码的易读性，在每个声明块的左花括号前添加一个空格。
+					声明块的右花括号应当单独成行。
+					每条声明语句的 : 后应该插">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS编码规范">
+<meta property="og:url" content="http://CodeTimes.cn/2016/10/09/codeguide-css/index.html">
+<meta property="og:site_name" content="Code Time cn">
+<meta property="og:description" content="CSS
+		
+
+		
+			
+				语法
+				
+					用4个空格来代替制表符（tab） -- 这是唯一能保证在所有环境下获得一致展现的方法。
+					为选择器分组时，将单独的选择器单独放在一行。
+					为了代码的易读性，在每个声明块的左花括号前添加一个空格。
+					声明块的右花括号应当单独成行。
+					每条声明语句的 : 后应该插">
+<meta property="og:updated_time" content="2016-10-09T10:27:49.817Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS编码规范">
+<meta name="twitter:description" content="CSS
+		
+
+		
+			
+				语法
+				
+					用4个空格来代替制表符（tab） -- 这是唯一能保证在所有环境下获得一致展现的方法。
+					为选择器分组时，将单独的选择器单独放在一行。
+					为了代码的易读性，在每个声明块的左花括号前添加一个空格。
+					声明块的右花括号应当单独成行。
+					每条声明语句的 : 后应该插">
+    
+
+    
+        <link rel="alternate" href="/" title="Code Time cn" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/uploads/wechat-qcode.jpg" />
+    
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/titillium-web/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/vendor/lightgallery/css/lightgallery.min.css">
+    
+    
+    
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">CodeTimes.Cn</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端教程/">前端教程</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端教程/Javascript/">Javascript</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/编码规范/">编码规范</a></li></ul>
+                                    
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/编码规范/">编码规范</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-codeguide-css" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        CSS编码规范
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-subtitle">
+                <a href="/2016/10/09/codeguide-css/" class="article-date">
+    <time datetime="2016-10-09T10:25:25.136Z" itemprop="datePublished">2016-10-09</time>
+</a>
+                
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div class="heading" id="css">
+			<h2>CSS</h2>
+		</div>
+
+		<div class="section" id="css-syntax">
+			<div class="col">
+				<h3>语法</h3>
+				<ul>
+					<li>用4个空格来代替制表符（tab） -- 这是唯一能保证在所有环境下获得一致展现的方法。</li>
+					<li>为选择器分组时，将单独的选择器单独放在一行。</li>
+					<li>为了代码的易读性，在每个声明块的左花括号前添加一个空格。</li>
+					<li>声明块的右花括号应当单独成行。</li>
+					<li>每条声明语句的 <code>:</code> 后应该插入一个空格。</li>
+					<li>为了获得更准确的错误报告，每条声明都应该独占一行。</li>
+					<li>所有声明语句都应当以分号结尾。最后一条声明语句后面的分号是可选的，但是，如果省略这个分号，你的代码可能更易出错。</li>
+					<li>对于以逗号分隔的属性值，每个逗号后面都应该插入一个空格（例如，<code>box-shadow</code>）。</li>
+					<li>不要在 <code>rgb()</code>、<code>rgba()</code>、<code>hsl()</code>、<code>hsla()</code> 或 <code>rect()</code> 值的<em>内部</em>的逗号后面插入空格。这样利于从多个属性值（既加逗号也加空格）中区分多个颜色值（只加逗号，不加空格）。</li>
+					<li>对于属性值或颜色参数，省略小于 1 的小数前面的 0 （例如，<code>.5</code> 代替 <code>0.5</code>；<code>-.5px</code> 代替 <code>-0.5px</code>）。</li>
+					<li>十六进制值应该全部小写，例如，<code>#fff</code>。在扫描文档时，小写字符易于分辨，因为他们的形式更易于区分。</li>
+					<li>尽量使用简写形式的十六进制值，例如，用 <code>#fff</code> 代替 <code>#ffffff</code>。</li>
+					<li>为选择器中的属性添加双引号，例如，<code>input[type="text"]</code>。
+						<a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css" target="_blank" rel="external">只有在某些情况下是可选的</a>，但是，为了代码的一致性，建议都加上双引号。</li>
+					<li>避免为 0 值指定单位，例如，用 <code>margin: 0;</code> 代替 <code>margin: 0px;</code>。</li>
+				</ul>
+				<p>对于这里用到的术语有疑问吗？请参考 Wikipedia 上的
+					<a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax" target="_blank" rel="external">syntax section of the Cascading Style Sheets article</a>。</p>
+			</div>
+			<div class="col">
+				<div class="highlight"><pre><code class="css"><span class="c">/* Bad CSS */</span>
+<span class="nc">.selector</span><span class="o">,</span> <span class="nc">.selector-secondary</span><span class="o">,</span> <span class="nc">.selector</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">text</span><span class="o">]</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span><span class="m">0px</span> <span class="m">0px</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span><span class="m">0px</span> <span class="m">1px</span> <span class="m">2px</span> <span class="m">#CCC</span><span class="o">,</span><span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">#FFFFFF</span>
+<span class="p">}</span>
+
+<span class="c">/* Good CSS */</span>
+<span class="nc">.selector</span><span class="o">,</span>
+<span class="nc">.selector-secondary</span><span class="o">,</span>
+<span class="nc">.selector</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="o">]</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">5</span><span class="p">);</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="m">#ccc</span><span class="o">,</span> <span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+			</div>
+		</div>
+
+		<div class="section" id="css-declaration-order">
+			<div class="col">
+				<h3>声明顺序</h3>
+				<p>相关的属性声明应当归为一组，并按照下面的顺序排列：</p>
+				<ol>
+					<li>Positioning</li>
+					<li>Box model</li>
+					<li>Typographic</li>
+					<li>Visual</li>
+				</ol>
+				<p>由于定位（positioning）可以从正常的文档流中移除元素，并且还能覆盖盒模型（box model）相关的样式，因此排在首位。盒模型排在第二位，因为它决定了组件的尺寸和位置。</p>
+				<p>其他属性只是影响组件的<em>内部（inside）</em>或者是不影响前两组属性，因此排在后面。</p>
+				<p>完整的属性列表及其排列顺序请参考
+					<a href="http://twitter.github.com/recess" target="_blank" rel="external">Recess</a>。</p>
+			</div>
+			<div class="col">
+				<div class="highlight"><pre><code class="css"><span class="nc">.declaration-order</span> <span class="p">{</span>
+  <span class="c">/* Positioning */</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">right</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">z-index</span><span class="o">:</span> <span class="m">100</span><span class="p">;</span>
+
+  <span class="c">/* Box-model */</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+
+  <span class="c">/* Typography */</span>
+  <span class="k">font</span><span class="o">:</span> <span class="k">normal</span> <span class="m">13px</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="o">:</span> <span class="m">1</span><span class="o">.</span><span class="m">5</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#333</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+
+  <span class="c">/* Visual */</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="m">#f5f5f5</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#e5e5e5</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+
+  <span class="c">/* Misc */</span>
+  <span class="k">opacity</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+			</div>
+		</div>
+
+		<div class="section" id="css-import">
+			<div class="col">
+				<h3>不要使用 <code>@import</code></h3>
+				<p>与 <code>&lt;link&gt;</code> 标签相比，<code>@import</code> 指令要慢很多，不光增加了额外的请求次数，还会导致不可预料的问题。替代办法有以下几种：</p>
+				<ul>
+					<li>使用多个 <code>&lt;link&gt;</code> 元素</li>
+					<li>通过 Sass 或 Less 类似的 CSS 预处理器将多个 CSS 文件编译为一个文件</li>
+					<li>通过 Rails、Jekyll 或其他系统中提供过 CSS 文件合并功能</li>
+				</ul>
+				<p>请参考
+					<a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/" target="_blank" rel="external">Steve Souders 的文章</a>了解更多知识。</p>
+			</div>
+			<div class="col">
+				<div class="highlight"><pre><code class="html"><span class="c">&lt;!-- Use link elements --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;core.css&quot;</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Avoid @imports --&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+  <span class="k">@import</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&quot;more.css&quot;</span><span class="o">)</span><span class="p">;</span>
+<span class="nt">&lt;/style&gt;</span>
+</code></pre></div>
+			</div>
+		</div>
+
+		<div class="section" id="css-media-queries">
+			<div class="col">
+				<h3>媒体查询（Media query）的位置</h3>
+				<p>将媒体查询放在尽可能相关规则的附近。不要将他们打包放在一个单一样式文件中或者放在文档底部。如果你把他们分开了，将来只会被大家遗忘。下面给出一个典型的实例。</p>
+			</div>
+			<div class="col">
+				<div class="highlight"><pre><code class="css"><span class="nc">.element</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.element-avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.element-selected</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.element</span> <span class="p">{</span> <span class="o">...</span><span class="p">}</span>
+  <span class="nc">.element-avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+  <span class="nc">.element-selected</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+			</div>
+		</div>
+
+		<div class="section" id="css-prefixed-properties">
+			<div class="col">
+				<h3>带前缀的属性</h3>
+				<p>当使用特定厂商的带有前缀的属性时，通过缩进的方式，让每个属性的值在垂直方向对齐，这样便于多行编辑。</p>
+				<p>在 Textmate 中，使用 <strong>Text &rarr; Edit Each Line in Selection</strong> (&#8963;&#8984;A)。在 Sublime Text 2 中，使用 <strong>Selection &rarr; Add Previous Line</strong> (&#8963;&#8679;&uarr;) 和 <strong>Selection &rarr;  Add Next Line</strong> (&#8963;&#8679;&darr;)。</p>
+			</div>
+			<div class="col">
+				<div class="highlight"><pre><code class="css"><span class="c">/* Prefixed properties */</span>
+<span class="nc">.selector</span> <span class="p">{</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">15</span><span class="p">);</span>
+          <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">15</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+			</div>
+		</div>
+
+		<div class="section" id="css-single-declarations">
+			<div class="col">
+				<h3>单行规则声明</h3>
+				<p>对于<strong>只包含一条声明</strong>的样式，为了易读性和便于快速编辑，建议将语句放在同一行。对于带有多条声明的样式，还是应当将声明分为多行。</p>
+				<p>这样做的关键因素是为了错误检测 -- 例如，CSS 校验器指出在 183 行有语法错误。如果是单行单条声明，你就不会忽略这个错误；如果是单行多条声明的话，你就要仔细分析避免漏掉错误了。</p>
+			</div>
+			<div class="col">
+				<div class="highlight"><pre><code class="css"><span class="c">/* Single declarations on one line */</span>
+<span class="nc">.span1</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.span2</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">140px</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.span3</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">220px</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="c">/* Multiple declarations, one per line */</span>
+<span class="nc">.sprite</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(../img/sprite.png)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.icon</span>           <span class="p">{</span> <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.icon-home</span>      <span class="p">{</span> <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">-20px</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.icon-account</span>   <span class="p">{</span> <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">-40px</span><span class="p">;</span> <span class="p">}</span>
+</code></pre></div>
+			</div>
+		</div>
+
+		<div class="section" id="css-shorthand">
+			<div class="col">
+				<h3>简写形式的属性声明</h3>
+				<p>在需要显示地设置所有值的情况下，应当尽量限制使用简写形式的属性声明。常见的滥用简写属性声明的情况如下：</p>
+				<ul>
+					<li><code>padding</code></li>
+					<li><code>margin</code></li>
+					<li><code>font</code></li>
+					<li><code>background</code></li>
+					<li><code>border</code></li>
+					<li><code>border-radius</code></li>
+				</ul>
+				<p>大部分情况下，我们不需要为简写形式的属性声明指定所有值。例如，HTML 的 heading 元素只需要设置上、下边距（margin）的值，因此，在必要的时候，只需覆盖这两个值就可以。过度使用简写形式的属性声明会导致代码混乱，并且会对属性值带来不必要的覆盖从而引起意外的副作用。</p>
+				<p>MDN（Mozilla Developer Network）上一片非常好的关于
+					<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties" target="_blank" rel="external">shorthand properties</a> 的文章，对于不太熟悉简写属性声明及其行为的用户很有用。</p>
+			</div>
+			<div class="col">
+				<div class="highlight"><pre><code class="css"><span class="c">/* Bad example */</span>
+<span class="nc">.element</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="sx">url(&quot;image.jpg&quot;)</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span> <span class="m">3px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Good example */</span>
+<span class="nc">.element</span> <span class="p">{</span>
+  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+  <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(&quot;image.jpg&quot;)</span><span class="p">;</span>
+  <span class="k">border-top</span><span class="o">-</span><span class="k">left</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+  <span class="k">border-top</span><span class="o">-</span><span class="k">right</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+			</div>
+		</div>
+
+		<div class="section" id="css-nesting">
+			<div class="col">
+				<h3>Less 和 Sass 中的嵌套</h3>
+				<p>避免非必要的嵌套。这是因为虽然你可以使用嵌套，但是并不意味着应该使用嵌套。只有在必须将样式限制在父元素内（也就是后代选择器），并且存在多个需要嵌套的元素时才使用嵌套。</p>
+			</div>
+			<div class="col">
+				<div class="highlight"><pre><code class="scss"><span class="c1">// Without nesting</span>
+<span class="nc">.table</span> <span class="o">&gt;</span> <span class="nt">thead</span> <span class="o">&gt;</span> <span class="nt">tr</span> <span class="o">&gt;</span> <span class="nt">th</span> <span class="p">{</span> <span class="err">…</span> <span class="p">}</span>
+<span class="nc">.table</span> <span class="o">&gt;</span> <span class="nt">thead</span> <span class="o">&gt;</span> <span class="nt">tr</span> <span class="o">&gt;</span> <span class="nt">td</span> <span class="p">{</span> <span class="err">…</span> <span class="p">}</span>
+
+<span class="c1">// With nesting</span>
+<span class="nc">.table</span> <span class="o">&gt;</span> <span class="nt">thead</span> <span class="o">&gt;</span> <span class="nt">tr</span> <span class="p">{</span>
+  <span class="o">&gt;</span> <span class="nt">th</span> <span class="p">{</span> <span class="err">…</span> <span class="p">}</span>
+  <span class="o">&gt;</span> <span class="nt">td</span> <span class="p">{</span> <span class="err">…</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+			</div>
+		</div>
+
+		<div class="section" id="css-comments">
+			<div class="col">
+				<h3>注释</h3>
+				<p>代码是由人编写并维护的。请确保你的代码能够自描述、注释良好并且易于他人理解。好的代码注释能够传达上下文关系和代码目的。不要简单地重申组件或 class 名称。</p>
+				<p>对于较长的注释，务必书写完整的句子；对于一般性注解，可以书写简洁的短语。</p>
+			</div>
+			<div class="col">
+				<div class="highlight"><pre><code class="css"><span class="c">/* Bad example */</span>
+<span class="c">/* Modal header */</span>
+<span class="nc">.modal-header</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+
+<span class="c">/* Good example */</span>
+<span class="c">/* Wrapping element for .modal-title and .modal-close */</span>
+<span class="nc">.modal-header</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</code></pre></div>
+			</div>
+		</div>
+
+		<div class="section" id="css-classes">
+			<div class="col">
+				<h3>class 命名</h3>
+				<ul>
+					<li>class 名称中只能出现小写字符和破折号（dashe）（不是下划线，也不是驼峰命名法）。破折号应当用于相关 class 的命名（类似于命名空间）（例如，<code>.btn</code> 和 <code>.btn-danger</code>）。</li>
+					<li>避免过度任意的简写。<code>.btn</code> 代表 <em>button</em>，但是 <code>.s</code> 不能表达任何意思。</li>
+					<li>class 名称应当尽可能短，并且意义明确。</li>
+					<li>使用有意义的名称。使用有组织的或目的明确的名称，不要使用表现形式（presentational）的名称。</li>
+					<li>基于最近的父 class 或基本（base） class 作为新 class 的前缀。</li>
+					<li>使用 <code>.js-*</code> class 来标识行为（与样式相对），并且不要将这些 class 包含到 CSS 文件中。</li>
+				</ul>
+				<p>在为 Sass 和 Less 变量命名是也可以参考上面列出的各项规范。</p>
+			</div>
+			<div class="col">
+				<div class="highlight"><pre><code class="css"><span class="c">/* Bad example */</span>
+<span class="nc">.t</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.red</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c">/* Good example */</span>
+<span class="nc">.tweet</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.important</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.tweet-header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</code></pre></div>
+			</div>
+		</div>
+
+		<div class="section" id="css-selectors">
+			<div class="col">
+				<h3>选择器</h3>
+				<ul>
+					<li>对于通用元素使用 class ，这样利于渲染性能的优化。</li>
+					<li>对于经常出现的组件，避免使用属性选择器（例如，<code>[class^="..."]</code>）。浏览器的性能会受到这些因素的影响。</li>
+					<li>选择器要尽可能短，并且尽量限制组成选择器的元素个数，建议不要超过 3 。</li>
+					<li><strong>只有</strong>在必要的时候才将 class 限制在最近的父元素内（也就是后代选择器）（例如，不使用带前缀的 class 时 -- 前缀类似于命名空间）。</li>
+				</ul>
+				<p>扩展阅读：</p>
+				<ul>
+					<li>
+						<a href="http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/" target="_blank" rel="external">Scope CSS classes with prefixes</a>
+					</li>
+					<li>
+						<a href="http://markdotto.com/2012/03/02/stop-the-cascade/" target="_blank" rel="external">Stop the cascade</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<div class="highlight"><pre><code class="css"><span class="c">/* Bad example */</span>
+<span class="nt">span</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.page-container</span> <span class="nf">#stream</span> <span class="nc">.stream-item</span> <span class="nc">.tweet</span> <span class="nc">.tweet-header</span> <span class="nc">.username</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c">/* Good example */</span>
+<span class="nc">.avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.tweet-header</span> <span class="nc">.username</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.tweet</span> <span class="nc">.avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</code></pre></div>
+			</div>
+		</div>
+
+		<div class="section" id="css-organization">
+			<div class="col">
+				<h3>代码组织</h3>
+				<ul>
+					<li>以组件为单位组织代码段。</li>
+					<li>制定一致的注释规范。</li>
+					<li>使用一致的空白符将代码分隔成块，这样利于扫描较大的文档。</li>
+					<li>如果使用了多个 CSS 文件，将其按照组件而非页面的形式分拆，因为页面会被重组，而组件只会被移动。</li>
+				</ul>
+			</div>
+			<div class="col">
+				<div class="highlight"><pre><code class="css"><span class="c">/*</span>
+<span class="c"> * Component section heading</span>
+<span class="c"> */</span>
+
+<span class="nc">.element</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+
+<span class="c">/*</span>
+<span class="c"> * Component section heading</span>
+<span class="c"> *</span>
+<span class="c"> * Sometimes you need to include optional context for the entire component. Do that up here if it&#39;s important enough.</span>
+<span class="c"> */</span>
+
+<span class="nc">.element</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c">/* Contextual sub-component or modifer */</span>
+<span class="nc">.element-heading</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</code></pre></div>
+			</div>
+		</div>
+
+		<div class="section" id="css-editor-prefs">
+			<div class="col">
+				<h3>编辑器配置</h3>
+				<p>将你的编辑器按照下面的配置进行设置，以避免常见的代码不一致和差异：</p>
+				<ul>
+					<li>用两个空格代替制表符（soft-tab 即用空格代表 tab 符）。</li>
+					<li>保存文件时，删除尾部的空白符。</li>
+					<li>设置文件编码为 UTF-8。</li>
+					<li>在文件结尾添加一个空白行。</li>
+				</ul>
+				<p>参照文档并将这些配置信息添加到项目的 <code>.editorconfig</code> 文件中。例如：
+					<a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig" target="_blank" rel="external">Bootstrap 中的 .editorconfig 实例</a>。更多信息请参考
+					<a href="http://editorconfig.org" target="_blank" rel="external">about EditorConfig</a>。</p>
+			</div>
+		</div>
+	</body>
+
+</html>
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://CodeTimes.cn/2016/10/09/codeguide-css/" data-id="ciu2hhh9r000e64ub54dxcay2" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div class="ds-thread" data-thread-key="2016/10/09/codeguide-css/" data-title="CSS编码规范" data-url="http://CodeTimes.cn/2016/10/09/codeguide-css/"></div>
+    <style>
+        #ds-thread #ds-reset .ds-textarea-wrapper {
+            background: none;
+        }
+        #ds-reset .ds-avatar img {
+            box-shadow: none;
+        }
+        #ds-reset .ds-gradient-bg {
+            background: #f7f7f7;
+        }
+        #ds-thread #ds-reset li.ds-tab a {
+            border-radius: 3px;
+        }
+        #ds-thread #ds-reset .ds-post-button {
+            color: white;
+            border: none;
+            box-shadow: none;
+            background: #d32;
+            text-shadow: none;
+            font-weight: normal;
+            font-family: 'Microsoft Yahei';
+        }
+        #ds-thread #ds-reset .ds-post-button:hover {
+            color: white;
+            background: #DE594C;
+        }
+        #ds-thread #ds-reset .ds-post-button:active {
+            background: #d32;
+        }
+        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
+            color: white;
+            background: #d32;
+            box-shadow: none;
+            text-shadow: none;
+            font-weight: normal;
+        }
+    </style>
+
+    
+    </section>
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="wechat" href="/" target="_blank">
+                        <i class="icon fa fa-wechat"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="qq" href="/" target="_blank">
+                        <i class="icon fa fa-qq"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/li-kang" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2016/10/09/codeguide-html/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">HTML编码规范</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/编码规范/">编码规范</a></p>
+                            <p class="item-title"><a href="/2016/10/09/codeguide-css/" class="title">CSS编码规范</a></p>
+                            <p class="item-date"><time datetime="2016-10-09T10:25:25.136Z" itemprop="datePublished">2016-10-09</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/编码规范/">编码规范</a></p>
+                            <p class="item-title"><a href="/2016/10/09/codeguide-html/" class="title">HTML编码规范</a></p>
+                            <p class="item-date"><time datetime="2016-10-09T10:25:25.120Z" itemprop="datePublished">2016-10-09</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端教程/">前端教程</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端教程/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2016/10/09/call与apply用法/" class="title">call与apply的用法</a></p>
+                            <p class="item-date"><time datetime="2016-10-09T00:41:47.229Z" itemprop="datePublished">2016-10-09</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端教程/">前端教程</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端教程/Javascript/">Javascript</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/编码规范/">编码规范</a><span class="category-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/面向对象/">面向对象</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/面向对象/" style="font-size: 10px;">面向对象</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://cs.sourcebook.cn/">《C# Source Book》</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://unity.sourcebook.cn/">《Unity Source Book》</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2016 Li Kang</p>
+                <p>Email: <a href="mailto:likang2008@gmail">likang2008@gmail.com</a></p>
+				<p>Web: www.CodeTimes.CN </p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'codetimes'};
+    (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+
+
+
+    
+        <script src="/vendor/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-share.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-video.min.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
